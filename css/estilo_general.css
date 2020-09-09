@@ -1,0 +1,653 @@
+
+
+/*******************1) Estilos constantes, body, main, footer, font-family, flex, columnas mobile 100%************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    padding-top: 5em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#contenedor {
+    background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+    
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/***************************************************************************************************************/
+
+header{
+    position: fixed;
+	left: 0; 
+    right: 0;
+}
+
+#cabecerafija2{
+    width: 100%;
+    height: 3.8em;
+    margin: 0;
+    background: linear-gradient(to left, #000046, #1cb5e0);   
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.logo {
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.6em; 
+}
+
+#logoheader{
+    height: 2.5em;
+    width: auto;
+}
+
+.titulo-cabecera-fija{
+    float: left;
+    height: 3.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.6em;
+    width: 50%;
+}
+
+#tituloHI{
+    float: left;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: whitesmoke;
+    letter-spacing: 4px;
+}
+
+#tituloSubHI{
+    float: left;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: whitesmoke;
+    margin-left: 0;
+    margin-top: 0.2em;
+}
+
+.titulo-pag{
+    background: linear-gradient(to top, #06beb6, #48b1bf);
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.titulo-pag h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: large;
+}
+
+#btn {
+    width: 3em;
+    height: 1.5em;
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    inline-size: 1em;
+    outline: none;
+    margin: 0.5em 1em;
+    color: whitesmoke;
+}
+
+.link {
+    color: whitesmoke;
+    background-color: rgba(128, 128, 128, 0.74);
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    display: ruby-base-container;
+}
+
+.link a {
+    display: block;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.link a:hover {
+    color:  #000046;
+}
+
+body.home a.home:link,
+body.homeS a.homeS:link,
+body.about a.about:link,
+body.howto a.howto:link,
+body.resumen a.resumen:link,
+body.aboutS a.aboutS:link,
+body.logros a.logros:link,
+body.pickup a.pickup:link,
+body.rewards a.rewards:link
+{
+    background-color:  #8fdd3ccb;
+    border: none;
+}
+
+#contenedorLogin{
+    width: 90%;
+    margin: 0.7em auto;
+    padding: 0.7em;
+    background-color: #000046;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+#opener{
+    height: 2em;
+    margin-bottom: 2em;
+    font-weight: bold;
+    color: #000046;
+}
+
+#plogin{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#registrate{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+#login{
+    width: 100%;
+}
+
+#login input{
+    width: 100%;
+    height: 2em;
+    padding: 0.3em;
+}
+
+.pinput{
+    margin-top: 1em;
+}
+
+#login label.error{
+    margin-left: 0.3em;
+    color: whitesmoke;
+	font-style: italic;
+}
+
+div.error { display: none; }
+input:focus { border: 1px dotted black; }
+input.error { border: 2px dotted #8fdd3c; }
+
+.validar{
+    margin-top: 1.5em;
+}
+
+[off-canvas] {
+    background-color: #000046;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pestañas {
+    width: 100%;
+    margin: 1.5em auto;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.imagenHT{
+    width: 100%;
+    height: auto;
+}
+
+.cont-text-pag{
+    background: linear-gradient(to bottom, #ece9e6, #ffffff);
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: justify;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: rgb(92, 92, 92);
+    font-size: small;
+    border-radius: 3px;
+}
+
+.cont-text-pag a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+}
+
+#codigo{
+    width: 80%;
+    margin: 1em 10%;
+    text-align: center;
+    height: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#botonConsultar{
+    width: 80%;
+    margin: 1em 10%;
+    text-align: center;
+    height: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#botonVolver{
+    width: 50%;
+    margin: 1em 25%;
+    text-align: center;
+    height: 2em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.tablaPicker {
+    width: 90%;
+    margin: 0 5%;
+    font-weight: bold;
+}
+
+
+
+.tablaPicker input {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(92, 92, 92);
+    margin-bottom: 0.5em;
+
+}
+
+.registro {
+    width: 90%;
+    margin: 0 5%;
+    font-weight: bold;
+}
+
+.registro input {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(92, 92, 92);
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.3em;
+}
+
+.registro select{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(92, 92, 92);
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.3em;
+
+}
+.radio input {
+    width: 100%;
+    text-align: center;
+}
+
+.divideRegistro input{
+    width: 5%;
+    margin: 0;
+}
+
+
+#videoCompost{
+    height: auto; 
+    width: 90%; 
+    margin: 0 5%;
+}
+
+.agenda{
+    width: 60%;
+    margin: 0.5em 20%;
+    height: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonAgenda{
+    width: 60%;
+    margin: 1em 20%;
+    height: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.pAgenda{
+    text-align: center;
+}
+
+.avatar{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#harry{
+    width: 40%;
+    height: auto;
+    margin: 0.5em 30%;
+}
+
+#tablaPuntaje{
+    text-align: center;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+#tablaPuntaje td{
+    border: 1px solid gray;
+    padding: 0.5em;
+}
+
+#cajaPuntos{
+    display: flex;
+    resize: none;
+    margin: 0.5em auto;
+    padding: 1em;
+    width: 90%;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#btnn{
+    display: flex;
+    margin: 1em auto;
+    padding: 0.5em;
+    width: 29%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#btnn p{
+    margin: auto;
+}
+
+#var1, #var2, #var3, #var4, #var5, #var6, #var7, #var8 {
+    background-color: #48b1bf;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.contPerfil{
+    display: flex;
+}
+.perfil{
+    width: 30%;
+    height: auto;
+    margin: 0;
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+#fotoResumen{
+    width: 70%;
+    height: auto;
+    margin: 1em 15%;
+}
+
+#volverIndex{
+    width: 90%;
+    height: 2em;
+    margin: 1em 5%;
+}
+
+footer{
+    background-color: #000046;
+    width: 100%;
+    height: 150px;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.copy{
+    width: 100%;
+    margin: 1.5em auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rrss {
+    width: 33%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+
+
+/***************** 2) Estilo media only max-width:415px ****************************************************/
+
+@media only screen and (max-width: 400px){
+    
+    #tituloSubHI{
+        display: none;
+    }
+
+    .rrss{
+        width: 100%;
+    }
+
+    footer{
+        height: 230px;
+    }
+}
+
+/***************************************************************************************************************/
+
+
+/***************** 3) Estilo media only min-width: 600px ****************************************************/
+
+@media only screen and (min-width: 600px){
+    /* For tablets: */
+
+    .col-1{
+        width: 100%;
+    }
+
+     
+    .cont-text-pag{
+        padding: 2em;
+    }
+
+    .perfil{
+        width: 25%;
+        height: auto;
+        margin-left: 2em;
+        margin-top: -1em;
+    }
+   
+    #contenedorLogin{
+        width: 50%;
+        margin: 1em auto;
+    }
+   
+}
+
+/***************************************************************************************************************/
+
+
+
+/***************** 4) Estilo media only min-width: 705px ****************************************************/
+
+@media only screen and (min-width: 705px){
+
+    .titulo-cabecera-fija{
+        height:3.5em;
+        padding-bottom: 0.4em;
+        padding-top: 0.9em;
+        width: 65%;
+    }
+    
+    #tituloHI{
+        font-size: 2em;
+    }
+    
+    #tituloSubHI{
+        font-size: 0.9em;
+        margin-left: 2em;
+        margin-top: 1.3em;
+    }
+
+    #codigo{
+        width: 50%;
+        margin: 1em 25%;
+    }
+    
+    #botonConsultar{
+        width: 50%;
+        margin: 1em 25%;
+    }
+    
+    #botonVolver{
+        width: 20%;
+        margin: 1em 40%;     
+    }
+
+    .perfil{
+        width: 20%;
+       
+    }
+    
+}
+    
+/***************** 5) Estilo media only min-width: 800px ****************************************************/
+
+@media only screen and (min-width: 800px){
+    /* For desktop: */
+
+    .col-2{
+        width: 47%;
+        margin: 1em auto;
+    }
+
+    main{
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-top: 5em;
+    }
+
+    .logo{
+        margin-left: 4em;
+        margin-top: 0.5em;
+        height: 3.2em;
+    }
+
+    #logoheader{
+        height: 3.2em;
+        width: auto;
+    }
+
+    p{
+        font-size: 1.1em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .tablaPicker {
+        width: 50%;
+        margin: 0 25%;
+    }  
+    
+    .tablaPicker p {
+        padding-left: 0;
+        padding-right: 0;
+    
+    }
+
+    .titulo-pag {
+        padding:0.5em;
+        margin-top: 1em;
+    }
+
+    .titulo-pag h1 {
+        font-size: x-large;
+    }    
+     
+    #cabecerafija2{
+        height: 4.5em; 
+    }
+
+    .titulo-cabecera-fija{
+        height:4.5em;
+        padding-bottom: 0.4em;
+        padding-top: 0.9em;
+        width: 65%;
+    }
+    
+    #tituloHI{
+        font-size: 2.5em;
+    }
+    
+    #tituloSubHI{
+        font-size: 1.1em;
+        margin-left: 2em;
+        margin-top: 1.3em;
+    }
+
+    #btn {
+        margin: 0.8em 2.8em 0.8em 0;
+        
+    }
+    
+    .imagenHT{
+        width: 40%;
+        margin: 0 30%;
+    }
+
+    #videoCompost{
+        height: 400px;
+        width: 90%;
+    }
+
+    .perfil{
+        width: 30%;
+       
+    }
+
+    #fotoResumen{
+        width: 50%;
+        height: auto;
+        margin: 1em 25%;
+    }
+    
+    
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="img/logo1.png">
+    <script src="https://kit.fontawesome.com/14907c5069.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/slidebars.css">
+    <link rel="stylesheet" href="css/style_slidebars.css">
+    <link rel="stylesheet" href="css/estilo_general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body class="home">
+
+    <div canvas="container" id="contenedor">
+
+        <header>
+            <div id="cabecerafija2">
+                <div class="logo">
+                    <img src="img/logo1.png" alt="HI" id="logoheader">
+                </div>
+                <div class="titulo-cabecera-fija">
+                    <div id="tituloHI">
+                        <span>Compostate!</span>
+                    </div>
+                    <div id="tituloSubHI">
+                        <span>Red de compostaje urbano</span>
+                    </div>
+                </div>
+                <button type="button" class="js-toggle-right-slidebar" id="btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <div id="contenedorLogin">
+                <p id="plogin">Inicie sesión</p>
+                <form id="login" action="login.action">
+                    <p class="pinput">
+                        <input id="email" name="email" type="email" placeholder="Ingrese email: (cualquiera)" required>
+                    </p>
+                    <p class="pinput">
+                        <input id="clave" name="clave" type="password" placeholder="Ingrese contraseña: (1234)" required>
+                    </p>
+                    <p>
+                        <input class="validar" type="submit" id="opener" value="Validar">
+                    </p>
+
+                </form>
+                <hr>
+                <a href="registro.html">
+                    <p id="registrate">Regístrate</p>
+                </a>
+            </div>
+
+            <div class="pestañas" id="pestañasIndex">
+                <ul>
+                    <li><a href="#text1Index"><span>Mucha Basura</span></a></li>
+                    <li><a href="#text2Index"><span>Residuos orgánicos</span></a></li>
+                    <li><a href="#text3Index"><span>¿Cómo aprovecharlos?</span></a></li>
+                </ul>
+                <div id="text1Index">
+                    <h3>Mucha basura poco reciclaje</h3><br>
+                    <p>Los chilenos producen al año casi el doble de la basura que generan en promedio los
+                        países de América Latina, pero apenas reciclan cerca del 10%, por falta de compromiso de la
+                        población, que recién ahora parece tomar conciencia sobre la necesidad de un cambio.
+                        Cada chileno genera unos 384 kilos de basura domiciliaria al año, muy por encima del promedio de
+                        países de América Latina, de 230 kilos, de acuerdo a datos del Ministerio del Medio Ambiente
+                        chileno.
+                        A eso hay que sumarle los residuos industriales (10,4 millones), sumando en total unas 16,9
+                        millones de toneladas al año.
+                        El marcado aumento en la producción de basura está influido por el crecimiento de la población,
+                        la producción industrial y bajas tasas de valorización de residuos.
+                        A la gente le gusta decir que recicla, pero a la hora de llevarlo a la práctica lo hacen por un
+                        rato y después se aburren. Es una falta de compromiso individual de separar nuestros residuos en
+                        origen y llevarlos a los puntos limpios.
+
+                    </p><br>
+                    <p>Pero a nivel social, las cosas avanzan más rápido y comienza a verse una mejor actitud hacia el
+                        reciclaje, sobre todo en algunas comunas de Santiago, ciudad que genera 43% de la basura de todo
+                        el país.
+                        En comunas como Vitacura, Providencia, Ñuñoa o Las Condes se han instalado varios ‘Puntos
+                        Limpios’, donde los vecinos pueden llevar sus residuos clasificados.
+                        La compañía de distribución eléctrica Chilectra, que alimenta a la mayoría de los hogares de la
+                        capital chilena, puso en marcha recientemente un programa de reciclaje que permite a los
+                        clientes descontar parte de su boleta a cambio de materiales reciclables.
+                        Un sondeo de la Universidad Andrés Bello realizado en 2012 a 1.075 personas, indicó que 41% de
+                        los encuestados no tenía el hábito del reciclaje, mientras que un 29% desconocía donde realizar
+                        esa actividad.
+                        Papeles y cartones son los materiales que más se reciclan en Chile con 474.650 toneladas
+                        anuales, le siguen los plásticos (355.394 toneladas), vidrios (292.014 toneladas) y metal
+                        (100.665).
+                        En total, Chile genera casi 1,3 millones de toneladas, considerando los residuos industriales y
+                        domiciliarios.</p><br>
+                    <img class="imagenHT" src="img/El_compostaje.jpg">
+                </div>
+
+                <div id="text2Index">
+                    <h3> ¿Qué pasa con los residuos orgánicos?</h3><br>
+                    <p>La gran parte del peso de la bolsa de basura <strong>(cerca de un 58%)</strong> corresponde a
+                        residuos orgánicos que pueden ser aprovechados. </p><br>
+                    <p>Esto tiene incidencia no solo en la valorización, sino también en la vida útil de los rellenos
+                        sanitarios. Actualmente en Chile un 78% de los residuos domiciliarios termina en este tipo de
+                        instalaciones -el resto va a basureros clandestinos-, y estos ya se están completando: en
+                        promedio, su vida útil no sobrepasa los 12 años.</p>
+                    <br>
+                    <p>Este 58% de residuos orgánicos es la fracción que genera los principales impactos de la basura;
+                        ahí están los olores, los volúmenes, las emisiones de gases de efecto invernadero por la
+                        descomposición anaeróbica.</p><br>
+                    <img class="imagenHT" src="img/7 2.jpg">
+                </div>
+
+                <div id="text3Index">
+                    <h3> ¿Entonces cómo aprovechamos estos residuos?</h3><br>
+                    <p> Hacer compost casero es una <strong>actividad para toda la familia</strong> una forma perfecta
+                        de acercar
+                        la naturaleza a los más pequeños de la casa, de transmitir valores de consumo responsable,
+                        reciclaje y respeto
+                        por el medio ambiente </p>
+                    <p> <em><strong>ComposTate</strong></em> tiene como objetivo incentivar a la gente en sus hogares a
+                        realizar compost casero, la cual es una <strong>actividad para toda la familia</strong>
+                        y una forma perfecta de acercar la naturaleza a los más pequeños de la casa. Esto transmite
+                        valores de consumo responsable, reciclaje y respeto
+                        por el medio ambiente </p>
+                    <p><em><strong>ComposTate</strong></em> busca recolectar este compost de los hogares de los socios
+                        ofreciéndoles incentivos a través de puntos que podrán canjear por premios, para que a su vez
+                        <em><strong>ComposTate</strong></em> poder venderlos a agricultores y dar un valor agregado a la
+                        agricultura chilenas remplazando el abono industrial por abono orgánico </p>
+                    <img class="imagenHT" src="img/Foto-3.jpg.webp">
+                </div>
+
+
+            </div>
+
+
+        </main> 
+
+        <footer>
+            <div class="copy"> Compostate Chile Ltda. <i class="far fa-copyright"></i></div>
+            <div class="rrss"> <i class="fab fa-facebook"></i> Compostate2020</div>
+            <div class="rrss"> <i class="fab fa-twitter"></i> @CompostateChile</div>
+            <div class="rrss"> <i class="fab fa-instagram"></i> @Compostate</div>
+        </footer>
+
+    </div>
+
+    <div off-canvas="slidebar-2 right shift">
+        <div class="link">
+            <a href="index.html" class="home">Inicio</a>
+        </div>
+        <div class="link">
+            <a href="about.html" class="about">¿Quiénes somos?</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/slidebars.js"></script>
+    <script src="scripts/scripts_sb.js"></script>
+    <script src="https://kit.fontawesome.com/14907c5069.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+
+    <script src="scripts/script_general.js"></script>
+
+    <script>
+        $(function() {
+        // $().ready(function () {
+            $("#login").validate();
+            $('#login').hide();
+            $('#plogin').click(function () {
+                $('#login').slideToggle();
+            });
+
+            // Al enviar el formulario "login"
+            $('#login').on('submit', function(event) {
+                // Prevenir la acción por defecto
+                event.preventDefault();
+
+                // Recuperar datos ingresados por el usuario
+                let clave = $('#clave').val();
+
+                // Comprobar que la clave sea correcta
+                if (clave == "1234") {
+                    // Mostrar alerta
+                    alert("¡Ha ingresado correctamente!");
+                    var pagina = "indexS.html";
+
+                    function redireccionar() {
+                        location.href = pagina
+                    }
+
+                    setTimeout(redireccionar, 500);
+                } else {
+                    alert("¡Credenciales incorrectas!");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
